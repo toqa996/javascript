@@ -396,3 +396,64 @@ caption {
     margin-top: 10px;
     /* Margin above copyright */
 }
+.dark-mode-button {
+    background-color: #748ef6;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 10px 15px;
+    /* Padding inside button */
+    font-size: 1rem;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+    position: absolute;
+    /* Position to place in header */
+    top: 20px;
+    /* Distance from top */
+    right: 20px;
+    /* Distance from right */
+}
+
+body.dark-mode {
+    background-color:black;
+    /* Dark background color */
+}
+
+body.dark-mode .main-header {
+    background-color: black;
+}
+body.dark-mode .side-bar {
+    background-color: black;
+}
+body.dark-mode .table caption {
+    background-color: black;
+}
+body.dark-mode .table tr th  {
+    background-color: black;
+}
+body.dark-mode .table tr td  {
+    background-color: black;
+}
+body.dark-mode .second-container {
+    background-color: black;
+}
+body.dark-mode .third-container{
+    background-color: black;
+}
+body.dark-mode .fourth-container {
+    background-color: black;
+}
+
+body.dark-mode .social-footer {
+    background-color: black;
+}
+

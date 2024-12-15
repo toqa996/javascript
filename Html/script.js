@@ -25,3 +25,31 @@ const darkModeButton = document.getElementById('dark-mode');
              isDarkMode = false;
          }
      }
+     
+// Greeting
+let greeting = new Date();
+let hour = greeting.getHours();
+let messageElement = document.getElementById("sayhallo");
+
+if (hour >= 6 && hour < 12) {
+    messageElement.innerHTML = "Good Morning";
+} else if (hour >= 12 && hour < 18) {
+    messageElement.innerHTML = "Good Afternoon";
+} else if (hour >= 18 && hour < 24) {
+    messageElement.innerHTML = "Good Evening";
+} else {
+    messageElement.innerHTML = "Good Night";
+} 
+function timeout(){
+    messageElement.innerHTML = "";
+}
+setTimeout(timeout, 5000);
+
+
+//Hamburgermenu
+const menuIcon = document.getElementById('menu-icon');
+const menu = document.getElementById('menu');
+
+menuIcon.addEventListener('click',function() {
+  menu.classList.toggle('open');
+});

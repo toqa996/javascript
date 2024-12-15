@@ -268,4 +268,61 @@ body.dark-mode .side-bar {
 body.dark-mode .social-footer {
     background-color: black;
 }
+/* End dark mode */
+/* Greetering */
+#sayhallo {
+    text-align: center; /* Centers the text inside the element */
+    font-size: 20px; /* Sets the font size to 20px */
+    color: white; /* Makes the text color white */
+    position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+    top: 100px; /* Distance from the top of the page or positioned ancestor */
+    left: 20px; /* Distance from the left side of the page or positioned ancestor */
+    border-radius: 5px; /* Rounds the corners of the element with a 5px radius */
+}
+/* End greeting */
+/* Hamburgermenu */
+.menu-icon {
+    display: none; /* Hide the hamburger menu icon on larger screens */
+    flex-direction: column; /* Align the bars vertically in a column layout */
+    gap: 5px; /* Add spacing between the bars */
+    cursor: pointer; /* Change the cursor to pointer to indicate it's clickable */
+}
+
+.menu-icon .bar {
+    width: 30px; /* Set the width of each bar in the hamburger icon */
+    height: 4px; /* Set the height of each bar */
+    background-color: white; /* Set the color of the bars */
+    border-radius: 2px; /* Round the edges of the bars for a smoother look */
+}
+
+@media (max-width: 768px) { /* Apply these styles only for screens 768px wide or smaller */
+    .main-nav {
+        display: none; /* Initially hide the navigation menu on smaller screens */
+        flex-direction: column; /* Stack the menu items vertically */
+        background-color: #748ef6; /* Set a background color for the navigation menu */
+        position: absolute; /* Position the menu relative to the viewport */
+        top: 70px; /* Move the menu below the header */
+        left: 40px; /* Add some left offset for alignment */
+        padding: 10px; /* Add padding inside the menu container */
+        border-radius: 5px; /* Round the edges of the menu container */
+    }
+
+    .main-nav.open {
+        display: flex; /* Display the menu when the 'open' class is added */
+    }
+
+    .menu-icon {
+        display: flex; /* Show the hamburger icon on smaller screens */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Arrange the list items vertically */
+        align-items: center; /* Center-align the list items */
+    }
+
+    .main-nav ul li {
+        padding: 10px 0; /* Add vertical spacing between menu items */
+    }
+}
+/* End of hamburger menu */
 

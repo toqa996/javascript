@@ -187,3 +187,34 @@ body {
     padding-right: 10px;
     /* Space between icon and text */
 }
+.dark-mode-button {
+    background-color: #748ef6;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 10px 15px;
+    /* Padding inside button */
+    font-size: 1rem;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+    position: absolute;
+    /* Position to place in header */
+    top: 20px;
+    /* Distance from top */
+    right: 20px;
+    /* Distance from right */
+}
+
+body.dark-mode {
+    background-color:black;
+    /* Dark background color */
+}

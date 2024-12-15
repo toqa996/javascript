@@ -1,0 +1,278 @@
+/*mywork page styles*/
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    /*Removes default inner spacing*/
+    padding: 0;
+    /*Removes default outer spacing*/
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Set default font for the entire page */
+    line-height: 1.6;
+    /* Increase line height for better readability */
+}
+
+/*End body styles*/
+/* Header styles */
+.main-header {
+    display: flex;
+    /* Enables a flex container for the element,*/
+    justify-content: center;
+    /* Horizontally centers the flex items within the container */
+    align-items: center;
+    /* Vertically centers the flex items within the container */
+    background-color: #94a8fa;
+    /* light purpel background for header */
+    padding: 20px;
+    /* Padding around header */
+    color: white;
+    /* White text color */
+    border-bottom: 2px solid #748ef6;
+    /*add bottom border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+
+}
+
+.h1 {
+    font-size: 3rem;
+    /* Font size for the main heading */
+    text-shadow: 5px 5px #748ef6;
+    /*Add shadow for h1*/
+}
+
+.prev {
+    position: absolute;
+    /* Positions the element absolutely relative to its nearest positioned ancestor (body or html) */
+    left: 20px;
+    /* Position the back button to the left */
+    color: white;
+    /* White text */
+    background-color: #748ef6;
+    /* light purpel background for header */
+    border-radius: 25px;
+    /* Rounded button shape */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    font-size: 1rem;
+    /* Font size */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Inline-block for spacing */
+}
+
+/* Back link hover effect */
+.prev:hover {
+    background-color: #5e7df8;
+    /* Change color on hover */
+}
+
+/* Icon styling within the link */
+.prev i {
+    margin-right: 6px;
+    /* Space between icon and text */
+}
+
+/*End header styles*/
+/* Main container styles */
+.main-container {
+    display: flex;
+    /* Enables a flex container for the element*/
+    flex-direction: column;
+    /* Make the element vertically*/
+    align-items: center;
+    /*Set the element in the center*/
+    padding: 20px;
+    /* Add padding to the main container */
+
+}
+
+/*Section finished work styles*/
+/* Selects all <h2> elements within elements that have the class "second-header" */
+.second-header h2 {
+    font-size: 30px;
+    /* Sets the font size of the <h2> text to 30 pixels */
+    color: white;
+    /* Sets the color of the text to white */
+    padding: 10px;
+    /* Adds 10 pixels of padding inside the <h2> element (inside the border, between the border and the content) */
+    text-align: center;
+    /* Centers the text horizontally within the <h4> element */
+    background-color: #94a8fa;
+    /* Sets the background color */
+    text-shadow: 3px 3px #748ef6;
+    /*Add shadow for h2*/
+
+}
+
+.second-header p {
+    font-size: 16px;
+    /* Sets the font size of the <p> text to 30 pixels */
+    color: #666;
+    /* Sets the color of the text to medium gray */
+    padding: 10px;
+    text-align: center;
+    /*Centers the text horizontally within the element*/
+}
+
+/* Image container for projects */
+.container {
+    display: flex;
+    /*Sets the element's display mode to flex*/
+    gap: 30px;
+    /*Adds 30 pixels of space between the element's*/
+    justify-content: space-between;
+    /*Distributes the element's children evenly across the container*/
+    padding: 20px;
+    /*Adds 20 pixels of padding around the container*/
+}
+
+.image-container {
+    position: relative;
+    /* Positions the element relative to its normal position*/
+    width: 350px;
+    /* Sets the element's width to 30% of its parent container's width */
+    transition: transform 0.3s ease-in-out;
+    /* Adds a smooth transition effect to the element's transform property over 0.3 seconds */
+    overflow: hidden;
+    /* Hides any content that overflows outside the element's boundaries */
+    border-radius: 8px;
+    /* Rounds the corners of the element with an 8px radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow effect with a horizontal offset of 0, vertical offset of 4px, 
+                                                blur of 8px, and color at 10% opacity for a soft shadow */
+    transition: transform 0.3s ease;
+    /* Moving animates transformations (like scaling or rotating) over 0.3 seconds */
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over the element */
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+    /* Scales the element to 103% of its original size, slightly enlarging it */
+}
+
+.image {
+    width: 100%;
+    /* Sets the element's width to 100% of its container */
+    height: auto;
+    /* Adjusts the height automatically based on the width*/
+    border-radius: 8px;
+    /* Rounds the corners of the element*/
+}
+
+
+
+/* Footer styles */
+.social-footer {
+    background-color: #94a8fa;
+    /* light purpel background for footer */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center text */
+    padding: 20px 0;
+    /* Padding for footer */
+    border-top: 2px solid #748ef6;
+    /*add top border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+    text-decoration: none;
+    /* remove underline from links*/
+}
+
+.social-links {
+    margin: 10px 0;
+    /* Margin for social links */
+}
+
+.social-links .link {
+    color: white;
+    /* White color for icons */
+    margin: 0 10px;
+    /* Margin between icons */
+    font-size: 1.5rem;
+    /* Icon size */
+    transition: color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.social-links .link:hover {
+    color: #748ef6;
+    /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    /* Margin above copyright */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer styles */
+.social-footer {
+    background-color: #94a8fa;
+    /* light purpel background for footer */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center text */
+    padding: 20px 0;
+    /* Padding for footer */
+    border-top: 2px solid #748ef6;
+    /*add top border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+}
+
+.social-links {
+    margin: 10px 0;
+    /* Margin for social links */
+}
+
+.social-links .link {
+    color: white;
+    /* White color for icons */
+    margin: 0 10px;
+    /* Margin between icons */
+    font-size: 1.5rem;
+    /* Icon size */
+    transition: color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.social-links .link:hover {
+    color: #748ef6;
+    /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    /* Margin above copyright */
+}

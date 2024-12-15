@@ -1,0 +1,199 @@
+/*interview page styles*/
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    /*Removes default inner spacing*/
+    padding: 0;
+    /*Removes default outer spacing*/
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Set default font for the entire page */
+    line-height: 1.6;
+    /* Set default line height for the entire page */
+}
+
+/*End body styles*/
+/* Header styles */
+.main-header {
+    display: flex;
+    /* Enables a flex container for the element*/
+    justify-content: center;
+    /* Horizontally centers the flex items within the container */
+    align-items: center;
+    /* Vertically centers the flex items within the container */
+    background-color: #94a8fa;
+    /* light purpel background for header */
+    padding: 20px;
+    /* Padding around header */
+    color: white;
+    /* White text color */
+    border-bottom: 2px solid #748ef6;
+    /*add bottom border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+}
+
+.h1 {
+    font-size: 3rem;
+    /* Font size for the main heading */
+    text-shadow: 5px 5px #748ef6;
+    /*Add shadow for h1*/
+}
+
+.prev {
+    position: absolute;
+    /* Positions the element absolutely relative to its nearest positioned ancestor (body or html) */
+    left: 20px;
+    /* Position the back button to the left */
+    color: white;
+    /* White text */
+    background-color: #748ef6;
+    /* light purpel background for header */
+    border-radius: 25px;
+    /* Rounded button shape */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    font-size: 1rem;
+    /* Font size */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Inline-block for spacing */
+}
+
+/* Back link hover effect */
+.prev:hover {
+    background-color: #5e7df8;
+    /* Change color on hover */
+}
+
+/* Icon styling within the link */
+.prev i {
+    margin-right: 6px;
+    /* Space between icon and text */
+}
+
+/*End header styles*/
+/*main container styles*/
+.main-container {
+    display: flex;
+    /* Enables a flex container for the element*/
+    flex-wrap: wrap;
+    /* Allow items to wrap onto new lines if needed */
+    justify-content: center;
+    /* Center the cards inside the main container */
+    gap: 20px;
+    /* Space between box */
+    padding: 20px;
+    /* Padding around the container */
+}
+
+.main-container .interview-text {
+    color: white;
+    /* Text color */
+    font-size: 1.2rem;
+    /* Font size */
+    padding: 10px;
+    /* Padding around the text */
+    border-radius: 10px;
+    /* Rounded corners */
+    background-color: rgba(66, 103, 249, 0.5);
+    /* Background color */
+}
+
+.text-container {
+    background-color: #94a8fa;
+    /* Set background color for each box */
+    border-radius: 10px;
+    /* Rounded corners for each box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow for box */
+    padding: 20px;
+    /* Inner padding for spacing */
+    width: calc(33.33% - 20px);
+    /* Three items per row with gap */
+    min-width: 250px;
+    /* Minimum width to prevent cards from getting too small on narrow screens */
+    display: flex;
+    /* Flexbox to align image and text horizontally */
+    flex-direction: column;
+    /* Align items vertically */
+    gap: 15px;
+    /*Space between the question and answer */
+    transition: transform 0.3s ease;
+    /* Moving animates transformations (like scaling or rotating) over 0.3 seconds */
+    height: 250px;
+
+}
+
+.text-container:hover {
+    transform: translateY(-5px);
+    /* Lift the card up slightly on hover */
+}
+
+.question {
+    font-size: 1.2rem;
+    /* Set font size to 1 rem */
+    color: white;
+    /*Make the text in white*/
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+.text {
+    font-size: 1rem;
+    /* Set font size smaller*/
+    color: white;
+    /*Make the text in white*/
+    margin: 0;
+    /* Remove any margin */
+}
+
+/*End main container styles*/
+
+/* Footer styles */
+.social-footer {
+    background-color: #94a8fa;
+    /* light purpel background for footer */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center text */
+    padding: 20px 0;
+    /* Padding for footer */
+    border-top: 2px solid #748ef6;
+    /*add top border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+}
+
+.social-links {
+    margin: 10px 0;
+    /* Margin for social links */
+}
+
+.social-links .link {
+    color: white;
+    /* White color for icons */
+    margin: 0 10px;
+    /* Margin between icons */
+    font-size: 1.5rem;
+    /* Icon size */
+    transition: color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.link:hover {
+    color: #748ef6;
+    /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    /* Margin above copyright */
+}

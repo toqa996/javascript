@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="icon1.png">
+</head>
+
+<body>
+    <!--main body-->
+    <main class="main-container">
+        <!--to add name , e-mail and the message-->
+        <form target="_blank" autocomplete="on" class="form">
+            <aside class="aside-up">
+                <h4>Name:</h4>
+                <label>
+                    <input type="text" value="Enter-Name">
+                </label>
+                <h4>E-mail:</h4>
+                <label>
+                    <input type="email" value="Enter E-mail">
+                </label>
+            </aside>
+            <!--message area-->
+            <aside class="aside-middel">
+                <textarea name="message" rows="20" cols="150">This is a default text</textarea>
+            </aside>
+            <!--submit and reset button-->
+            <aside class="aside-down">
+                <label>
+                    <button type="submit" class="submit">
+                        Send Your Message <i class="fa-solid fa-paper-plane"></i> 
+                    </button>
+                </label>
+                <label>
+                    <button type="reset" class="reset">
+                        Reset <i class="fa-solid fa-rotate-right"></i> 
+                    </button>
+                </label>
+            </aside>
+            <aside>
+                <a class="prev" href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-angle-left"></i>Back</a>
+            </aside>
+        </form>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

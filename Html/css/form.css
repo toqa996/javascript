@@ -1,0 +1,189 @@
+/*form page styles*/
+/* Reset some default browser styles */
+* {
+    padding: 0;
+    /*Removes default inner spacing*/
+    margin: 0;
+    /*Removes default outer spacing*/
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Set the font for the body */
+    display: flex;
+    /* Flexbox layout to center content */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+    /* Remove default margin */
+    background-color: #94a8fa;
+    /* Light purpel background color */
+}
+
+/* Main container styling */
+.main-container {
+    max-width: 600px;
+    /* Limit the container width */
+    background-color: white;
+    /* White background for the form */
+    padding: 40px;
+    /* Padding inside the container */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 3px 3px rgba(30, 3, 118, 0.2);
+    /*Add shadow for tabel*/
+    text-align: center;
+    /* Center-align the text */
+}
+
+/* Styling for form header */
+.form h4 {
+    font-size: 1rem;
+    /* Smaller font size for labels */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #333;
+    /* Dark color for labels */
+    margin: 10px 0;
+    /* Space above and below */
+    text-align: left;
+    /*Make h4 in the left*/
+    background-color: #94a8fa;
+    /* background color for h4*/
+    color: white;
+    /* text color for h4*/
+    border-radius: 5px;
+    /* border radius for h4*/
+    padding: 10px;
+    /* padding for h4*/
+}
+
+/* Input field styling */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 100%;
+    /* Full width within the container */
+    padding: 10px;
+    /* Padding inside input fields */
+    margin-bottom: 20px;
+    /* Space below each input */
+    border: none;
+    /* Remove default border */
+    border-bottom: 2px solid #748ef6;
+    /* Bottom border styling */
+    border-radius: 4px;
+    /*Rounded corners for border*/
+    outline: none;
+    /* Remove outline on focus */
+    transition: border-bottom-color 0.3s;
+    /* Smooth transition */
+    color: #555;
+    /* Default text color */
+}
+
+/* Placeholder styling */
+.form input[type="text"]::placeholder,
+.form input[type="email"]::placeholder,
+.form textarea::placeholder {
+    color: #888;
+    /* Gray color for placeholder text */
+    font-style: italic;
+    /* Italicize the placeholder text */
+}
+
+/* Focus styling for inputs */
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+    border-bottom-color: #4459ac;
+    /* dark purpel border on focus */
+}
+
+/* Textarea specific styling */
+.form textarea {
+    resize: none;
+    /* Disable resizing */
+    height: 150px;
+    /* Set height for textarea */
+}
+
+/* Submit and Reset buttons styling */
+.submit,
+.reset {
+    background-color: #748ef6;
+    /* light purpel background for header */
+    color: white;
+    /* White text */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    border: none;
+    /* Remove default border */
+    border-radius: 25px;
+    /* Rounded button shape */
+    font-size: 1rem;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    margin: 5px;
+    /* Space between buttons */
+}
+
+.submit i,
+.reset i {
+    padding-left: 7px;
+    /* padding for icon */
+}
+
+.submit i:hover,
+.reset i:hover {
+    transform: translateX(3px) translateY(-3px);
+    /* slight animation on hover */
+    color: #4a4848;
+    /* Darken icon color on hover */
+}
+
+/* Hover effect for buttons */
+.submit:hover,
+.reset:hover {
+    background-color: #5e7df8;
+    /* Darken button color on hover */
+}
+
+/* Back link styling */
+.prev {
+    color: white;
+    /* White text */
+    background-color: #748ef6;
+    /* light purpel background for header */
+    border-radius: 25px;
+    /* Rounded button shape */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    font-size: 1rem;
+    /* Font size */
+    margin: 10px 0;
+    /* Space above the link */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Inline-block for spacing */
+}
+
+/* Back link hover effect */
+.prev:hover {
+    background-color: #5e7df8;
+    /* Change color on hover */
+}
+
+/* Icon styling within the link */
+.prev i {
+    padding-right: 10px;
+    /* Space between icon and text */
+}

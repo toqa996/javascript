@@ -1,0 +1,366 @@
+/*Home page styles*/
+/* Reset some default browser styles */
+
+* {
+    padding: 0;
+    /*Removes default inner spacing*/
+    margin: 0;
+    /*Removes default outer spacing*/
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+/* body styles*/
+body {
+    font-family: Arial, sans-serif;
+    /* Set default font for the entire page */
+    line-height: 1.6;
+    /* Increase line height for better readability */
+}
+
+/* Header styles */
+.main-header {
+    display: flex;
+    /* Flexbox layout for main content */
+    flex-direction: row;
+    /* Row layout for main content */
+    padding: 20px;
+    /* Padding for main section */
+    gap: 20px;
+    /* Gap between main and sidebar */
+    background-color: #94a8fa;
+    border-bottom: 2px solid #748ef6;
+    /*Add bottom border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+
+}
+
+.main-header .header-img {
+    width: 300px;
+    /* Make image responsive */
+    border-radius: 8px;
+    /* Rounded corners for image */
+}
+
+.content {
+    text-align: center;
+    /* Center align text*/
+}
+
+.content h1 {
+    color: white;
+    /* White text color */
+    font-size: 4rem;
+    /* Large font size for headings */
+    margin: 0;
+    /* Remove default margin */
+    text-shadow: 5px 5px #748ef6;
+    /*Add shadow for h1*/
+}
+
+.content p {
+    color: white;
+    /* White text color */
+    font-size: 1.3rem;
+    /* Set a readable font size for paragraphs */
+    padding: 20px;
+    /* Add padding to paragraphs*/
+}
+
+/*link stlyes*/
+.content .prev {
+    color: white;
+    /* white text color */
+    text-decoration: none;
+    /* Remove underline */
+    padding: 20px;
+    /* Add padding to paragraphs*/
+
+}
+
+.prev i:hover {
+
+    transform: translateX(-15px);
+    /* Add a slight horizontal movement on hover */
+}
+
+/*end header styles*/
+
+/* Main container styles */
+.container {
+    padding: 20px;
+    /* Add padding to the main container */
+    background-color: white;
+    /* white background */
+}
+
+/* Table styles */
+.caption {
+    font-size: 2rem;
+    /* Increase font size for table captions */
+    text-align: center;
+    /* Center the caption text */
+    margin-bottom: 10px;
+    /* Space below the caption */
+    text-shadow: 3px 3px #748ef6;
+    /*Add shadow for h1*/
+    background-color: #94a8fa;
+    /* Light purpel background color */
+    color: white;
+    /* White text color */
+}
+
+.table {
+    font-size: 1.2rem;
+    /* Increase font size for table captions */
+    text-align: center;
+    /* Center the caption text */
+    box-shadow: 3px 3px rgba(30, 3, 118, 0.2);
+    /*Add shadow for tabel*/
+    border-collapse: collapse;
+    /* Remove spacing between table cells */
+    margin: 20px 0;
+    /* Add vertical margins around the table */
+}
+
+tr {
+    background-color: #94a8fa;
+    /* light purpel background for header */
+    font-size: 1rem;
+    /* Increase font size*/
+}
+
+th {
+    padding: 15px;
+    /* Padding within header cells */
+    color: white;
+    /*Set font color*/
+    border: 1px solid #ddd;
+    /*Make border for cells*/
+}
+
+
+.table button {
+    padding: 10px 20px;
+    /* Button padding */
+    font-size: 1rem;
+    /*Set font size*/
+    color: #fff;
+    /*Set font color*/
+    background-color: #748ef6;
+    /* light purpel background for header */
+    border: none;
+    /* Remove default border */
+    border-radius: 6px;
+    /*Rounded corners for link*/
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+
+}
+
+.table button:hover {
+    background-color: #5e7df8;
+    /* Darken button color on hover */
+}
+
+/*End tabel styles*/
+
+/* Section styles */
+.side-down {
+    text-align: center;
+    /* Center the text in this section */
+    margin: 40px 0;
+    /* Add vertical margins above and below this section */
+    color: white;
+    /*Set font color*/
+    background-color: #94a8fa;
+    /* light purpel background for header */
+
+}
+
+.side-down h3 {
+    font-size: 1.5rem;
+    /*Set font size*/
+    text-shadow: 3px 3px #748ef6;
+    /*Add shadow for h3*/
+}
+
+.side-down p {
+    font-size: 1rem;
+    /*Set font size*/
+    padding-bottom: 10px;
+    /*Paragrph padding*/
+}
+
+.button-down {
+    padding: 10px 30px;
+    /* Button padding */
+    margin-bottom: 10px;
+    /*Button margin*/
+    font-size: 1rem;
+    /*Set font size*/
+    color: #fff;
+    /*Set font color*/
+    background-color: #748ef6;
+    /* light purpel background for header */
+    border: none;
+    /* Remove default border */
+    border-radius: 8px;
+    /*Rounded corners for link*/
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.button-down:hover {
+    background-color: #5e7df8;
+    /* Darken button color on hover */
+}
+
+/*EndSection styles */
+
+/* Footer styles */
+.social-footer {
+    background-color: #94a8fa;
+    /* light purpel background for footer */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center text */
+    padding: 20px 0;
+    /* Padding for footer */
+    border-top: 2px solid #748ef6;
+    /*add top border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+}
+
+.social-links {
+    margin: 10px 0;
+    /* Margin for social links */
+}
+
+.social-links .link {
+    color: white;
+    /* White color for icons */
+    margin: 0 10px;
+    /* Margin between icons */
+    font-size: 1.5rem;
+    /* Icon size */
+    transition: color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.social-links .link:hover {
+    color: #748ef6;
+    /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    /* Margin above copyright */
+}
+/* End Footer styles */
+/*cookie styles*/
+#cookie-banner {
+    position: fixed;
+    /* Fix the position to the viewport */
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    /* Adjust for centering */
+    background-color: #94a8fa;
+    /* Light purple background */
+    color: white;
+    /* White text color */
+    padding: 20px;
+    /* Padding around the content */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+    /* Center the text */
+}
+
+/* Cookie button styles */
+.cookie-button {
+    background-color: #748ef6;
+    /* Button background */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding inside button */
+    font-size: 1rem;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+/* End Cookie styles */
+/*Dark mode styles*/
+.dark-mode-button {
+    background-color: #748ef6;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 10px 15px;
+    /* Padding inside button */
+    font-size: 1rem;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+    position: absolute;
+    /* Position to place in header */
+    top: 20px;
+    /* Distance from top */
+    right: 20px;
+    /* Distance from right */
+}
+
+body.dark-mode {
+    background-color:black;
+    /* Dark background color */
+}
+
+body.dark-mode .main-header {
+    background-color: black;
+}
+body.dark-mode .container{
+    background-color: black;
+}
+body.dark-mode .caption  {
+    background-color: black;
+}
+
+body.dark-mode .table tr th  {
+    background-color: black;
+}
+body.dark-mode .side-down  {
+    background-color: black;
+}
+body.dark-mode .side-down h3 {
+    background-color: black;
+}
+body.dark-mode .side-down p {
+    background-color: black;
+}
+body.dark-mode .side-down  {
+    background-color: black;
+}
+
+body.dark-mode .social-footer {
+    background-color: black;
+}
+

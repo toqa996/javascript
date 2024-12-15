@@ -1,0 +1,398 @@
+/*about me page styles*/
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    /*Removes default inner spacing*/
+    padding: 0;
+    /*Removes default outer spacing*/
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Set default font for the entire page */
+    line-height: 1.6;
+    /* Set default line height for the entire page */
+}
+
+/*End body styles*/
+/* Header styles */
+.main-header {
+    display: flex;
+    /* Enables a flex container for the element,*/
+    justify-content: center;
+    /* Horizontally centers the flex items within the container */
+    align-items: center;
+    /* Vertically centers the flex items within the container */
+    background-color: #94a8fa;
+    /* light purpel background for header */
+    padding: 20px;
+    /* Padding around header */
+    color: white;
+    /* White text color */
+    border-bottom: 2px solid #748ef6;
+    /*add bottom border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+}
+
+.h1 {
+    font-size: 3rem;
+    /* Font size for the main heading */
+    text-shadow: 5px 5px #748ef6;
+    /*Add shadow for h1*/
+}
+
+.prev {
+    position: absolute;
+    /* Positions the element absolutely relative to its nearest positioned ancestor (body or html) */
+    left: 20px;
+    /* Position the back button to the left */
+    color: white;
+    /* White text */
+    background-color: #748ef6;
+    /* light purpel background for header */
+    border-radius: 25px;
+    /* Rounded button shape */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    font-size: 1rem;
+    /* Font size */
+    text-decoration: none;
+    /* Remove underline */
+    display: inline-block;
+    /* Inline-block for spacing */
+}
+
+/* Back link hover effect */
+.prev:hover {
+    background-color: #5e7df8;
+    /* Change color on hover */
+}
+
+/* Icon styling within the link */
+.prev i {
+    margin-right: 6px;
+    /* Space between icon and text */
+}
+
+/*End header styles*/
+
+/*Main container styles*/
+.main-container {
+    display: flex;
+    /* Enables flexbox layout */
+    flex-direction: column;
+    /* Aligns children vertically */
+    align-items: center;
+    /* Centers the children horizontally */
+    max-width: 1200px;
+    /* Sets a maximum width for the container */
+    margin: auto;
+    /* Centers the container on the page */
+    padding: 20px;
+    /* Adds padding around the container */
+}
+
+/* Inner container styling */
+.container {
+    display: flex;
+    /* Enables flexbox layout for the inner container */
+    width: 100%;
+    /* Full width */
+    margin-bottom: 20px;
+    /* Adds space between the inner and outer containers */
+
+
+}
+
+.side-bar {
+    flex: 3;
+    /* Allow sidebar to take more space */
+    padding: 20px;
+    /* Padding for sidebar */
+    border-radius: 8px;
+    /* Rounded corners */
+    margin-right: 20px;
+    /* Space between sidebar and aside */
+    background-color: #94a8fa;
+    /* Light purpel background color */
+    box-shadow: 2px 2px rgba(30, 3, 118, 0.2);
+    /*Add shadow for side-bar */
+}
+
+.side-bar p {
+    font-size: 1.3rem;
+    /* Font size for paragraph */
+    line-height: 1.5;
+    /* Improve paragraph readability */
+    color: white;
+    /* Link color */
+    padding-top: 40px;
+    /*Add some padding for the text*/
+}
+
+.aside {
+    flex: 1;
+    /* Allow aside to take less space */
+}
+
+.aside img {
+    border-radius: 8px;
+    /* Rounded corners for image */
+}
+
+/*End of inner container*/
+
+/* Table container styling */
+.tabel-container {
+    width: 100%;
+    /* Full width */
+    margin-bottom: 20px;
+    /* Adds space below the table */
+}
+
+.table {
+    width: 100%;
+    /* Full width for the table */
+    margin-top: 20px;
+    /* Space above the table */
+    font-size: 1.2rem;
+    /* Increase font size for table captions */
+    text-align: center;
+    /* Center the caption text */
+    box-shadow: 3px 3px rgba(30, 3, 118, 0.2);
+    /*Add shadow for tabel*/
+    border-collapse: collapse;
+    /* Remove spacing between table cells */
+
+}
+
+th,
+td {
+    background-color: #94a8fa;
+    /* light purpel background for header */
+    padding: 10px;
+    /* Padding inside table cells */
+    text-align: center;
+    /* Aligns text to the left */
+    font-size: 1rem;
+    /* Increase font size*/
+    color: white;
+    /* White text color */
+    border: 1px solid #ddd;
+    /*Make border for cells*/
+}
+
+caption {
+    font-size: 2rem;
+    /* Increase font size for table captions */
+    text-align: center;
+    /* Center the caption text */
+    margin-bottom: 10px;
+    /* Space below the caption */
+    text-shadow: 3px 3px #748ef6;
+    /*Add shadow for titel*/
+    background-color: #94a8fa;
+    /* Light purpel background color */
+    color: white;
+    /* White text color */
+}
+
+.table a {
+    text-decoration: none;
+    /*Remove the line under the link*/
+    color: white;
+    /* White text color */
+    background-color: #748ef6;
+    /* light purpel background for header */
+    padding: 6px 12px;
+    /* Button padding */
+    border-radius: 6px;
+    /*Rounded corners for link*/
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.table a:hover {
+    background-color: #5e7df8;
+    /* Darken button color on hover */
+}
+
+/* Second container styling for additional information */
+.second-container {
+    width: 100%;
+    /* Full width */
+    margin-bottom: 20px;
+    /* Adds space below this section */
+    text-align: center;
+    /* Center the caption text */
+    background-color: #94a8fa;
+    /* Light purpel background color */
+    padding: 15px;
+    /*Add padding to element*/
+}
+
+.second-container h4 {
+    color: white;
+    /* White text color */
+    font-size: 1.7rem;
+    /* Increase font size for table captions */
+    text-shadow: 3px 3px #748ef6;
+    /*Add shadow for h4*/
+}
+
+.second-container p {
+    font-size: 1.08rem;
+    color: white;
+    /* White text color */
+    padding: 15px;
+    /*Add padding to element*/
+}
+
+.website {
+    padding: 15px;
+}
+
+.second-container .website a {
+    color: white;
+    /* White text color */
+    text-decoration: none;
+    /*Remove the line under the link*/
+    background-color: #748ef6;
+    /* light purpel background for header */
+    padding: 6px 12px;
+    /* Button padding */
+    border-radius: 6px;
+    /*Rounded corners for link*/
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.second-container .website a:hover {
+    background-color: #5e7df8;
+    /* Darken button color on hover */
+}
+
+/* Third container styling  */
+.third-container {
+    width: 100%;
+    /* Full width */
+    margin-bottom: 20px;
+    /* Adds space below this section */
+    text-align: center;
+    /* Center the caption text */
+    background-color: #94a8fa;
+    /* Light purpel background color */
+    padding: 15px;
+    /*Add padding to element*/
+}
+
+.third-container h4 {
+    color: white;
+    /* White text color */
+    font-size: 1.7rem;
+    /* Increase font size for table captions */
+    text-shadow: 3px 3px #748ef6;
+    /*Add shadow for h4*/
+}
+
+.third-container p {
+    font-size: 1.08rem;
+    color: white;
+    /* White text color */
+    padding: 15px;
+    /*Add padding to element*/
+}
+
+/* Fourth container styling for personal information */
+.fourth-container {
+    width: 100%;
+    /* Full width */
+    margin-bottom: 20px;
+    /* Adds space below this section */
+    text-align: center;
+    /* Center the caption text */
+    background-color: #94a8fa;
+    /* Light purpel background color */
+    padding: 15px;
+    /*Add padding to element*/
+}
+
+.fourth-container h4 {
+    padding-bottom: 10px;
+    color: white;
+    /* White text color */
+    font-size: 1.7rem;
+    /* Increase font size for table captions */
+    text-shadow: 3px 3px #748ef6;
+    /*Add shadow for h4*/
+}
+
+.info {
+    padding-top: 8px;
+    color: white;
+    /* White text color */
+    margin-bottom: 5px;
+    /* Space between personal info entries */
+}
+
+.info .link1 {
+    color: white;
+    /* White color for icons */
+    margin: 0 10px;
+    /* Margin between icons */
+    font-size: 1.5rem;
+    /* Icon size */
+    transition: color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.info .link1:hover {
+    color: #748ef6;
+    /* Change color on hover */
+}
+
+/* Footer styles */
+.social-footer {
+    background-color: #94a8fa;
+    /* light purpel background for footer */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center text */
+    padding: 20px 0;
+    /* Padding for footer */
+    border-top: 2px solid #748ef6;
+    /*add top border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+}
+
+.social-links {
+    margin: 10px 0;
+    /* Margin for social links */
+}
+
+.social-links .link {
+    color: white;
+    /* White color for icons */
+    margin: 0 10px;
+    /* Margin between icons */
+    font-size: 1.5rem;
+    /* Icon size */
+    transition: color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.social-links .link:hover {
+    color: #748ef6;
+    /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    /* Margin above copyright */
+}

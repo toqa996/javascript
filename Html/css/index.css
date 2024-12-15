@@ -1,0 +1,271 @@
+/*Index page styles*/
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    /*Removes default inner spacing*/
+    padding: 0;
+    /*Removes default outer spacing*/
+    box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Set default font for the entire page */
+    line-height: 1.6;
+    /* Increase line height for better readability */
+}
+
+/* Header styles */
+.main-header {
+    background-color: #94a8fa;
+    /* light purpel background for header */
+    color: white;
+    /* White text color */
+    padding: 20px;
+    /* Padding around header */
+    text-align: center;
+    /* Center text */
+    border-bottom: 2px solid #748ef6;
+    /*add bottom border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+}
+
+.main-header__img {
+    width: 120px;
+}
+
+
+.main-nav {
+    margin-top: 10px;
+    /* Space above navigation */
+}
+
+.main-nav ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove padding */
+}
+
+.main-nav ul li {
+    display: inline;
+    /* Display items inline */
+    margin: 0 15px;
+    /* Margin between links */
+}
+
+.main-nav ul li a {
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold text */
+    padding: 10px 15px;
+    /*padding for link*/
+    font-size: 1.5rem;
+    /* font size for link*/
+}
+
+.main-nav ul li a:hover {
+    background-color: #748ef6;
+    /*background color for link*/
+    border-radius: 10px;
+    /*Rounded corners for link*/
+}
+
+/*End header*/
+/* Main container styles */
+.main-container {
+    display: flex;
+    /* Flexbox layout for main content */
+    flex-direction: row;
+    /* Row layout for main content */
+    padding: 20px;
+    /* Padding for main section */
+    gap: 20px;
+    /* Gap between main and sidebar */
+
+}
+
+/* Sidebar styles */
+.side-bar {
+    flex: 2;
+    /* Allow sidebar to take more space */
+    padding: 20px;
+    /* Padding for sidebar */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: #94a8fa;
+    /* Light purpel background color */
+    box-shadow: 2px 2px rgba(30, 3, 118, 0.2);
+    /*Add shadow for side-bar */
+
+
+}
+
+.side-bar h2 {
+    font-size: 2rem;
+    /* Font size for section heading */
+    padding: 10px;
+    /* padding for section heading */
+    color: white;
+    /* Link color */
+    text-shadow: 3px 3px #748ef6;
+    /*Add shadow for h2*/
+
+}
+
+.side-bar p {
+    font-size: 1.1rem;
+    /* Font size for paragraph */
+    line-height: 1.5;
+    /* Improve paragraph readability */
+    color: white;
+    /* Link color */
+}
+
+/* Aside styles */
+.aside {
+    flex: 1.5;
+    /* Allow aside to take less space */
+}
+
+.aside video {
+    max-width: 100%;
+    /* Make image responsive */
+    border-radius: 8px;
+    /* Rounded corners for image */
+
+}
+
+/* Footer styles */
+.social-footer {
+    background-color: #94a8fa;
+    /* light purpel background for footer */
+    color: white;
+    /* White text color */
+    text-align: center;
+    /* Center text */
+    padding: 20px 0;
+    /* Padding for footer */
+    border-top: 2px solid #748ef6;
+    /*add top border for footer*/
+    border-radius: 5px;
+    /*Rounded corners for border*/
+    text-decoration: none;
+    /* remove underline from links */
+}
+
+.social-links {
+    margin: 10px 0;
+    /* Margin for social links */
+}
+
+.social-links .link {
+    color: white;
+    /* White color for icons */
+    margin: 0 10px;
+    /* Margin between icons */
+    font-size: 1.5rem;
+    /* Icon size */
+    transition: color 0.3s;
+    /* Smooth transition for hover */
+}
+
+.social-links .link:hover {
+    color: #748ef6;
+    /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    /* Margin above copyright */
+}
+
+#cookie-banner {
+    position: fixed;
+    /* Fix the position to the viewport */
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    /* Adjust for centering */
+    background-color: #94a8fa;
+    /* Light purple background */
+    color: white;
+    /* White text color */
+    padding: 20px;
+    /* Padding around the content */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+    /* Center the text */
+}
+
+/* Cookie button styles */
+.cookie-button {
+    background-color: #748ef6;
+    /* Button background */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding inside button */
+    font-size: 1rem;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.dark-mode-button {
+    background-color: #748ef6;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 10px 15px;
+    /* Padding inside button */
+    font-size: 1rem;
+    /* Font size */
+    font-weight: bold;
+    /* Bold text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+    position: absolute;
+    /* Position to place in header */
+    top: 20px;
+    /* Distance from top */
+    right: 20px;
+    /* Distance from right */
+}
+
+body.dark-mode {
+    background-color:black;
+    /* Dark background color */
+}
+
+body.dark-mode .main-header {
+    background-color: black;
+}
+
+body.dark-mode .side-bar {
+    background-color: black;
+}
+
+body.dark-mode .social-footer {
+    background-color: black;
+}
+

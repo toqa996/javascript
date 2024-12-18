@@ -396,6 +396,7 @@ caption {
     margin-top: 10px;
     /* Margin above copyright */
 }
+
 .dark-mode-button {
     background-color: #748ef6;
     /* Button background color */
@@ -424,36 +425,51 @@ caption {
 }
 
 body.dark-mode {
-    background-color:black;
+    background-color: black;
     /* Dark background color */
 }
 
 body.dark-mode .main-header {
     background-color: black;
+    /* Dark background color */
 }
+
 body.dark-mode .side-bar {
     background-color: black;
+    /* Dark background color */
 }
+
 body.dark-mode .table caption {
     background-color: black;
+    /* Dark background color */
 }
-body.dark-mode .table tr th  {
+
+body.dark-mode .table tr th {
     background-color: black;
+    /* Dark background color */
 }
-body.dark-mode .table tr td  {
+
+body.dark-mode .table tr td {
     background-color: black;
+    /* Dark background color */
 }
+
 body.dark-mode .second-container {
     background-color: black;
+    /* Dark background color */
 }
-body.dark-mode .third-container{
+
+body.dark-mode .third-container {
     background-color: black;
+    /* Dark background color */
 }
+
 body.dark-mode .fourth-container {
     background-color: black;
+    /* Dark background color */
 }
 
 body.dark-mode .social-footer {
     background-color: black;
+    /* Dark background color */
 }
-

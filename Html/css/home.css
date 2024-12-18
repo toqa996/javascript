@@ -260,6 +260,7 @@ th {
     margin-top: 10px;
     /* Margin above copyright */
 }
+
 /* End Footer styles */
 /*cookie styles*/
 #cookie-banner {
@@ -300,6 +301,7 @@ th {
     cursor: pointer;
     /* Pointer cursor on hover */
 }
+
 /* End Cookie styles */
 /*Dark mode styles*/
 .dark-mode-button {
@@ -330,37 +332,51 @@ th {
 }
 
 body.dark-mode {
-    background-color:black;
+    background-color: black;
     /* Dark background color */
 }
 
 body.dark-mode .main-header {
     background-color: black;
-}
-body.dark-mode .container{
-    background-color: black;
-}
-body.dark-mode .caption  {
-    background-color: black;
+    /* Dark background color */
 }
 
-body.dark-mode .table tr th  {
+body.dark-mode .container {
     background-color: black;
+    /* Dark background color */
 }
-body.dark-mode .side-down  {
+
+body.dark-mode .caption {
     background-color: black;
+    /* Dark background color */
 }
+
+body.dark-mode .table tr th {
+    background-color: black;
+    /* Dark background color */
+}
+
+body.dark-mode .side-down {
+    background-color: black;
+    /* Dark background color */
+}
+
 body.dark-mode .side-down h3 {
     background-color: black;
+    /* Dark background color */
 }
+
 body.dark-mode .side-down p {
     background-color: black;
+    /* Dark background color */
 }
-body.dark-mode .side-down  {
+
+body.dark-mode .side-down {
     background-color: black;
+    /* Dark background color */
 }
 
 body.dark-mode .social-footer {
     background-color: black;
+    /* Dark background color */
 }
-

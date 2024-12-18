@@ -213,28 +213,6 @@ body {
     /* Margin above copyright */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer styles */
 .social-footer {
     background-color: #94a8fa;
@@ -276,6 +254,7 @@ body {
     margin-top: 10px;
     /* Margin above copyright */
 }
+
 /* Footer styles */
 
 .dark-mode-button {
@@ -306,17 +285,21 @@ body {
 }
 
 body.dark-mode {
-    background-color:black;
+    background-color: black;
     /* Dark background color */
 }
 
 body.dark-mode .main-header {
     background-color: black;
+    /* Dark background color */
 }
+
 body.dark-mode .second-header h2 {
     background-color: black;
+    /* Dark background color */
 }
 
 body.dark-mode .social-footer {
     background-color: black;
+    /* Dark background color */
 }
